@@ -149,10 +149,7 @@
       </nav>
     </header>
     <!-- Acerca de mí -->
-    <section
-      id="about-me"
-      class="max-w-screen-lg mx-auto px-4 pt-40"
-    >
+    <section id="about-me" class="max-w-screen-lg mx-auto px-4 pt-40">
       <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
         <div class="flex-1 space-y-6">
           <h2 class="text-3xl font-bold flex items-center gap-2 text-gray-900">
@@ -212,7 +209,7 @@
             class="relative h-full w-full overflow-hidden rounded-full border-4 border-white shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <img
-              src="../src/img/fotoperfil.webp"
+              src="./img/fotoperfil.webp"
               alt="Foto de perfil de Vanessa Becerra Zamorano"
               class="h-full w-full object-cover object-center"
             />
@@ -445,56 +442,93 @@
     </section>
     <!-- Portafolio -->
     <!-- Carrusel -->
-    <section class="max-w-screen-lg mx-auto py-16 px-4">
+    <section id="portfolio" class="max-w-screen-lg mx-auto py-16 px-4">
       <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
         <span class="text-2xl">💼</span> Algunos de mis proyectos
       </h2>
       <div class="relative overflow-hidden">
-        <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 z-10">
+        <button
+          id="prevBtn"
+          class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 z-10"
+        >
           ◀
         </button>
-        <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 z-10">
+        <button
+          id="nextBtn"
+          class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 z-10"
+        >
           ▶
         </button>
         <div id="carousel" class="flex transition-transform duration-500">
           <!-- Proyecto 1 -->
           <div class="w-full flex-shrink-0 px-4">
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src="../src/img/proyecto1.webp" alt="Proyecto 1" class="w-full h-48 object-cover">
+              <img
+                src="./img/proyecto1.webp"
+                alt="Proyecto 1"
+                class="w-full h-48 object-cover"
+              />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-2">Galería de arte</h3>
-                <p class="text-gray-600 mb-4">Página estática usando Remix y Tailwind CSS para una galería de arte.</p>
-                <a href="https://art-gallery-nu.vercel.app/" class="text-pink-500 hover:underline">Ver Demo</a>
+                <p class="text-gray-600 mb-4">
+                  Página estática usando Remix y Tailwind CSS para una galería
+                  de arte.
+                </p>
+                <a
+                  href="https://art-gallery-nu.vercel.app/"
+                  class="text-pink-500 hover:underline"
+                  >Ver Demo</a
+                >
               </div>
             </div>
           </div>
           <!-- Proyecto 2 -->
           <div class="w-full flex-shrink-0 px-4">
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src="../src/img/proyecto2.webp" alt="Proyecto 2" class="w-full h-48 object-cover">
+              <img
+                src="./img/proyecto2.webp"
+                alt="Proyecto 2"
+                class="w-full h-48 object-cover"
+              />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-2">Escuela Rural</h3>
-                <p class="text-gray-600 mb-4">Sistema de gestión escolar con Spring Boot, JPA y PostgreSQL, frontend en Thymeleaf y Tailwind.</p>
-                <a href="https://github.com/VanessaBecerra95/EscuelaRural_JPA" class="text-pink-500 hover:underline">Ver Demo</a>
+                <p class="text-gray-600 mb-4">
+                  Sistema de gestión escolar con Spring Boot, JPA y PostgreSQL,
+                  frontend en Thymeleaf y Tailwind.
+                </p>
+                <a
+                  href="https://github.com/VanessaBecerra95/EscuelaRural_JPA"
+                  class="text-pink-500 hover:underline"
+                  >Ver Demo</a
+                >
               </div>
             </div>
           </div>
           <!-- Proyecto 3 -->
           <div class="w-full flex-shrink-0 px-4">
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src="../src/img/proyecto3.webp" alt="Proyecto 3" class="w-full h-48 object-cover">
+              <img
+                src="./img/proyecto3.webp"
+                alt="Proyecto 3"
+                class="w-full h-48 object-cover"
+              />
               <div class="p-6">
                 <h3 class="text-xl font-semibold mb-2">Storeapp</h3>
-                <p class="text-gray-600 mb-4">Aplicación CRUD con PHP/Laravel usando Tailwind para el frontend.</p>
-                <a href="https://github.com/VanessaBecerra95/storeapp" class="text-pink-500 hover:underline">Ver Demo</a>
+                <p class="text-gray-600 mb-4">
+                  Aplicación CRUD con PHP/Laravel usando Tailwind para el
+                  frontend.
+                </p>
+                <a
+                  href="https://github.com/VanessaBecerra95/storeapp"
+                  class="text-pink-500 hover:underline"
+                  >Ver Demo</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    
 
     <!-- Contacto -->
     <section id="contact" class="max-w-screen-lg mx-auto px-4 py-16">
