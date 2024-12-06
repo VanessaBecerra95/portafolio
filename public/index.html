@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Author: Vanessa Becerra, Category: Portafolio"
+    />
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-pattern-circle bg-gray-100">
+    <header>
+      <nav
+        class="w-full max-w-screen-lg px-4 py-2 mx-auto bg-white shadow-md rounded-xl fixed z-30 inset-x-4 lg:px-8 lg:py-3 mt-20"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto text-slate-800"
+        >
+          <a
+            id="brand-name"
+            href="#"
+            class="brand-name mr-4 block cursor-pointer py-1.5 text-base text-slate-800 font-semibold"
+          >
+            Vanessa Becerra
+          </a>
+
+          <div
+            id="menu"
+            class="hidden w-full lg:block lg:w-auto transition-all duration-300 ease-in-out overflow-hidden"
+          >
+            <ul
+              class="flex flex-col gap-2 mt-2 mb-4 cursor-pointer lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+            >
+              <li
+                class="flex items-center p-1 text-sm gap-x-2 text-slate-600 hover:bg-slate-50 hover:font-semibold lg:hover:bg-transparent rounded-md transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
+                <a href="#about-me" class="flex items-center"> Acerca de mí </a>
+              </li>
+              <li
+                class="flex items-center p-1 text-sm gap-x-2 text-slate-600 hover:bg-slate-50 hover:font-semibold lg:hover:bg-transparent rounded-md transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
+
+                <a href="#skills" class="flex items-center"> Skills </a>
+              </li>
+              <li
+                class="flex items-center p-1 text-sm gap-x-2 text-slate-600 hover:bg-slate-50 hover:font-semibold lg:hover:bg-transparent rounded-md transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h3.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 0 1.06.44H18A2.25 2.25 0 0 1 20.25 9v.776"
+                  />
+                </svg>
+
+                <a href="#portfolio" class="flex items-center"> Portafolio </a>
+              </li>
+              <li
+                class="flex items-center p-1 text-sm gap-x-2 text-slate-600 hover:bg-slate-50 hover:font-semibold lg:hover:bg-transparent rounded-md transition-colors duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+
+                <a href="#contact" class="flex items-center"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+          <button
+            id="mobile-menu-button"
+            class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
+          >
+            <span
+              class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Acerca de mí -->
+    <section
+      id="about-me"
+      class="max-w-screen-lg mx-auto px-4 pt-40"
+    >
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+        <div class="flex-1 space-y-6">
+          <h2 class="text-3xl font-bold flex items-center gap-2 text-gray-900">
+            <span class="text-2xl">👩‍💻</span> Acerca de mí
+          </h2>
+
+          <div class="space-y-4 text-gray-900">
+            <p>
+              Hola, soy Vanessa Becerra Zamorano,
+              <span class="text-pink-500 font-bold"
+                >desarrolladora Full Stack en Java</span
+              >. Apasionada por la colaboración en equipo y la entrega de
+              resultados excepcionales.
+            </p>
+            <p>
+              He creado
+              <span class="text-pink-500 font-bold"
+                >aplicaciones web robustas con Java y Spring Boot</span
+              >, integrando bases de datos con Hibernate y construyendo APIs
+              RESTful eficientes. También tengo un buen ojo para el diseño
+              usando
+              <span class="text-pink-500 font-bold">Bootstrap y Tailwind</span>.
+            </p>
+            <p>
+              Mi
+              <span class="text-pink-500 font-bold"
+                >sólida formación en matemáticas</span
+              >
+              me permite resolver problemas complejos con una perspectiva
+              analítica y creativa.
+            </p>
+            <p>
+              Si buscas a alguien que combine
+              <span class="text-pink-500 font-bold">análisis y creatividad</span
+              >, ¡me encantaría conectar! Contacta conmigo a través de mi
+              <a
+                href="mailto:va.becerrazamorano@gmail.com"
+                class="text-pink-500 font-bold"
+                >correo profesional</a
+              >
+              o
+              <a
+                href="https://www.linkedin.com/in/vanessa-becerra-zamorano/"
+                class="text-pink-500 font-bold"
+                >LinkedIn</a
+              >.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative w-72 h-72 md:w-96 md:h-96 shrink-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-500 rounded-full animate-pulse"
+          ></div>
+          <div class="absolute inset-2 bg-white rounded-full shadow-lg"></div>
+          <div
+            class="relative h-full w-full overflow-hidden rounded-full border-4 border-white shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
+          >
+            <img
+              src="../src/img/fotoperfil.webp"
+              alt="Foto de perfil de Vanessa Becerra Zamorano"
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="max-w-screen-lg mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold flex items-center gap-2 mb-8">
+        <span class="text-2xl">🛠️</span> Lenguajes y herramientas
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Frontend -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h3 class="text-lg font-semibold mb-4 text-pink-500">Frontend</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:html-5.svg"
+                alt="HTML5"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">HTML5</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:css-3.svg"
+                alt="CSS3"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">CSS3</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:javascript.svg"
+                alt="JavaScript"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">JavaScript</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:react.svg"
+                alt="React"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">React</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:tailwindcss-icon.svg"
+                alt="Tailwind"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Tailwind</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:bootstrap.svg"
+                alt="Bootstrap"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h3 class="text-lg font-semibold mb-4 text-pink-500">Backend</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:java.svg"
+                alt="Java"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Java</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:spring-icon.svg"
+                alt="Spring"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Spring</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:php.svg"
+                alt="PHP"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bases de datos -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h3 class="text-lg font-semibold mb-4 text-pink-500">
+            Bases de datos
+          </h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:postgresql.svg"
+                alt="PostgreSQL"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">PostgreSQL</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:mysql.svg"
+                alt="MySQL"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">MySQL</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:oracle.svg"
+                alt="Oracle"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Oracle</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud y DevOps -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h3 class="text-lg font-semibold mb-4 text-pink-500">
+            Cloud y DevOps
+          </h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:aws.svg"
+                alt="AWS"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">AWS</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:git-icon.svg"
+                alt="Git"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IDEs y Herramientas -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h3 class="text-lg font-semibold mb-4 text-pink-500">
+            IDEs y Herramientas
+          </h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:intellij-idea.svg"
+                alt="IntelliJ IDEA"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">IntelliJ</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:visual-studio-code.svg"
+                alt="VS Code"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">VS Code</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:postman.svg"
+                alt="Postman"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Postman</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sistemas Operativos -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h3 class="text-lg font-semibold mb-4 text-pink-500">
+            Sistemas Operativos
+          </h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:linux-tux.svg"
+                alt="Linux"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Linux</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <img
+                src="https://api.iconify.design/logos:microsoft-windows.svg"
+                alt="Windows"
+                class="w-12 h-12"
+              />
+              <span class="text-sm text-gray-600">Windows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portafolio -->
+    <!-- Carrusel -->
+    <section class="max-w-screen-lg mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
+        <span class="text-2xl">💼</span> Algunos de mis proyectos
+      </h2>
+      <div class="relative overflow-hidden">
+        <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 z-10">
+          ◀
+        </button>
+        <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 z-10">
+          ▶
+        </button>
+        <div id="carousel" class="flex transition-transform duration-500">
+          <!-- Proyecto 1 -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <img src="../src/img/proyecto1.webp" alt="Proyecto 1" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Galería de arte</h3>
+                <p class="text-gray-600 mb-4">Página estática usando Remix y Tailwind CSS para una galería de arte.</p>
+                <a href="https://art-gallery-nu.vercel.app/" class="text-pink-500 hover:underline">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <img src="../src/img/proyecto2.webp" alt="Proyecto 2" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Escuela Rural</h3>
+                <p class="text-gray-600 mb-4">Sistema de gestión escolar con Spring Boot, JPA y PostgreSQL, frontend en Thymeleaf y Tailwind.</p>
+                <a href="https://github.com/VanessaBecerra95/EscuelaRural_JPA" class="text-pink-500 hover:underline">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+              <img src="../src/img/proyecto3.webp" alt="Proyecto 3" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Storeapp</h3>
+                <p class="text-gray-600 mb-4">Aplicación CRUD con PHP/Laravel usando Tailwind para el frontend.</p>
+                <a href="https://github.com/VanessaBecerra95/storeapp" class="text-pink-500 hover:underline">Ver Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- Contacto -->
+    <section id="contact" class="max-w-screen-lg mx-auto px-4 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <h1 class="text-4xl font-bold">
+            ¿Necesitas de mis
+            <span
+              class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block"
+            >
+              <span class="relative text-white">servicios?</span>
+            </span>
+          </h1>
+          <p class="py-4">
+            Completa el siguiente formulario para que te apoye en tus proyectos!
+          </p>
+        </div>
+        <form novalidate="" class="flex flex-col space-y-6">
+          <label class="block">
+            <span class="mb-1">Nombre completo</span>
+            <input
+              type="text"
+              placeholder="Leroy Jenkins"
+              class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-pink-500 dark:bg-gray-100"
+            />
+          </label>
+          <label class="block">
+            <span class="mb-1">Correo electrónico</span>
+            <input
+              type="email"
+              placeholder="leroy@jenkins.com"
+              class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-pink-500 dark:bg-gray-100"
+            />
+          </label>
+          <label class="block">
+            <span class="mb-1">Mensaje</span>
+            <textarea
+              rows="3"
+              class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-pink-500 dark:bg-gray-100"
+            ></textarea>
+          </label>
+          <button
+            type="button"
+            class="self-center px-8 py-3 text-lg rounded-lg bg-pink-500 text-white hover:bg-pink-600 focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75 transition-transform transform active:scale-95"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div class="xl:grid xl:grid-cols-2 xl:gap-8">
+          <div class="space-y-8 xl:col-span-1">
+            <h2 class="text-2xl font-bold text-white">Vanessa Becerra</h2>
+            <p class="text-gray-400 text-sm">
+              Desarrolladora Full Stack especializada en Java, creando
+              soluciones web robustas y eficientes.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="https://www.linkedin.com/in/vanessa-becerra-zamorano/"
+                class="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <span class="sr-only">LinkedIn</span>
+                <svg
+                  class="h-8 w-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/VanessaBecerra95"
+                class="text-gray-400 hover:text-white transition-colors duration-300"
+              >
+                <span class="sr-only">GitHub</span>
+                <svg
+                  class="h-8 w-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mt-12 xl:mt-0">
+            <h3
+              class="text-sm font-semibold text-white tracking-wider uppercase"
+            >
+              Contacto
+            </h3>
+            <ul class="mt-4 space-y-4">
+              <li class="flex items-center">
+                <svg
+                  class="flex-shrink-0 h-6 w-6 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <span class="ml-3 text-sm">va.becerrazamorano@gmail.com</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="flex-shrink-0 h-6 w-6 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <span class="ml-3 text-sm">123456789</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="flex-shrink-0 h-6 w-6 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span class="ml-3 text-sm">Santiago, Chile</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-gray-700 pt-8">
+          <p class="text-base text-gray-400 xl:text-center">
+            &copy; 2024 Vanessa Becerra. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Botón para subir -->
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

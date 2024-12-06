@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* logo */
+
+.brand-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  color: transparent;
+  background: linear-gradient(90deg, #2d3748 70%, deeppink 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.brand-name::before {
+  content: "< ";
+  color: deeppink;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.brand-name::after {
+  content: " />";
+  color: deeppink;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.brand-name:hover::before,
+.brand-name:hover::after {
+  opacity: 1;
+}
+/* Navbar */
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: deeppink;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li:hover a::after {
+  width: 100%;
+}
+
+.bg-pattern-circle {
+  background-image: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    ),
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px, 20px 20px;
+  background-color: #f0f0f0;
+}
+
+#carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+#carousel > div {
+  min-width: 100%;
+  box-sizing: border-box;
+}
