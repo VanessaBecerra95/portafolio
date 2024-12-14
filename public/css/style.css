@@ -76,12 +76,20 @@ nav ul li:hover a::after {
   background-color: #f0f0f0;
 }
 
-#carousel {
-  display: flex;
-  transition: transform 0.5s ease;
+.splide__arrow {
+  background-color: #ec4899; /* Rosa de Tailwind */
+  color: white;
+  border-radius: 9999px;
+  padding: 0.5rem;
 }
 
-#carousel > div {
-  min-width: 100%;
-  box-sizing: border-box;
+.splide__pagination__page {
+  background-color: #ec4899;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #d946ef; /* Púrpura */
 }

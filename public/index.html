@@ -9,12 +9,13 @@
     />
     <title>Mi portafolio</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-pattern-circle bg-gray-100">
     <header>
       <nav
-        class="w-full max-w-screen-lg px-4 py-2 mx-auto bg-white shadow-md rounded-xl fixed z-30 inset-x-4 lg:px-8 lg:py-3 mt-20"
+        class="w-full max-w-screen-lg mx-auto bg-white shadow-lg rounded-lg fixed z-30 inset-x-4 px-8 py-4 mt-6"
       >
         <div
           class="container flex flex-wrap items-center justify-between mx-auto text-slate-800"
@@ -441,138 +442,134 @@
       </div>
     </section>
     <!-- Portafolio -->
-    <!-- Carrusel -->
     <section id="portfolio" class="max-w-screen-lg mx-auto py-16 px-4">
       <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
         <span class="text-2xl">💼</span> Algunos de mis proyectos
       </h2>
-      <div class="relative overflow-hidden">
-        <button
-          id="prevBtn"
-          class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 z-10"
-        >
-          ◀
-        </button>
-        <button
-          id="nextBtn"
-          class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 z-10"
-        >
-          ▶
-        </button>
-        <div id="carousel" class="flex transition-transform duration-500">
-          <!-- Proyecto 1 -->
-          <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img
-                src="./img/proyecto1.webp"
-                alt="Proyecto 1"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">Galería de arte</h3>
-                <p class="text-gray-600 mb-4">
-                  Página estática usando Remix y Tailwind CSS para una galería
-                  de arte.
-                </p>
-                <a
-                  href="https://art-gallery-nu.vercel.app/"
-                  class="text-pink-500 hover:underline"
-                  >Ver Demo</a
-                >
+      <div class="splide" aria-label="Proyectos">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- Proyecto 1 -->
+            <li class="splide__slide">
+              <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <img
+                  src="./img/proyecto1.webp"
+                  alt="Proyecto 1"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Galería de arte</h3>
+                  <p class="text-gray-600 mb-4">
+                    Página estática usando Remix y Tailwind CSS.
+                  </p>
+                  <a
+                    href="https://art-gallery-nu.vercel.app/"
+                    class="text-pink-500 hover:underline"
+                    >Ver Demo</a
+                  >
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- Proyecto 2 -->
-          <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img
-                src="./img/proyecto2.webp"
-                alt="Proyecto 2"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">Escuela Rural</h3>
-                <p class="text-gray-600 mb-4">
-                  Sistema de gestión escolar con Spring Boot, JPA y PostgreSQL,
-                  frontend en Thymeleaf y Tailwind.
-                </p>
-                <a
-                  href="https://github.com/VanessaBecerra95/EscuelaRural_JPA"
-                  class="text-pink-500 hover:underline"
-                  >Ver Demo</a
-                >
+            </li>
+            <!-- Proyecto 2 -->
+            <li class="splide__slide">
+              <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <img
+                  src="./img/proyecto2.webp"
+                  alt="Proyecto 2"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Escuela Rural</h3>
+                  <p class="text-gray-600 mb-4">
+                    Sistema de gestión escolar con Spring Boot.
+                  </p>
+                  <a
+                    href="https://github.com/VanessaBecerra95/EscuelaRural_JPA"
+                    class="text-pink-500 hover:underline"
+                    >Ver Demo</a
+                  >
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- Proyecto 3 -->
-          <div class="w-full flex-shrink-0 px-4">
-            <div class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img
-                src="./img/proyecto3.webp"
-                alt="Proyecto 3"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">Storeapp</h3>
-                <p class="text-gray-600 mb-4">
-                  Aplicación CRUD con PHP/Laravel usando Tailwind para el
-                  frontend.
-                </p>
-                <a
-                  href="https://github.com/VanessaBecerra95/storeapp"
-                  class="text-pink-500 hover:underline"
-                  >Ver Demo</a
-                >
+            </li>
+            <!-- Proyecto 3 -->
+            <li class="splide__slide">
+              <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <img
+                  src="./img/proyecto3.webp"
+                  alt="Proyecto 3"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Storeapp</h3>
+                  <p class="text-gray-600 mb-4">
+                    Aplicación CRUD con PHP/Laravel.
+                  </p>
+                  <a
+                    href="https://github.com/VanessaBecerra95/storeapp"
+                    class="text-pink-500 hover:underline"
+                    >Ver Demo</a
+                  >
+                </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contact" class="max-w-screen-lg mx-auto px-4 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="space-y-6">
+    <section id="contact" method="POST" class="py-16">
+      <div
+        class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        <div>
           <h1 class="text-4xl font-bold">
             ¿Necesitas de mis
-            <span
-              class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block"
-            >
-              <span class="relative text-white">servicios?</span>
-            </span>
+            <span class="relative text-pink-500">servicios?</span>
           </h1>
-          <p class="py-4">
+          <p class="text-lg text-gray-600">
             Completa el siguiente formulario para que te apoye en tus proyectos!
           </p>
         </div>
-        <form novalidate="" class="flex flex-col space-y-6">
+        <form
+          action="contact.php"
+          class="bg-white p-8 rounded-lg shadow-lg space-y-6"
+        >
           <label class="block">
-            <span class="mb-1">Nombre completo</span>
+            <span class="text-sm font-semibold text-gray-700"
+              >Nombre completo</span
+            >
             <input
               type="text"
-              placeholder="Leroy Jenkins"
-              class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-pink-500 dark:bg-gray-100"
+              name="nombre"
+              placeholder="Ingrese su nombre completo"
+              required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
             />
           </label>
           <label class="block">
-            <span class="mb-1">Correo electrónico</span>
+            <span class="text-sm font-semibold text-gray-700"
+              >Correo electrónico</span
+            >
             <input
               type="email"
-              placeholder="leroy@jenkins.com"
-              class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-pink-500 dark:bg-gray-100"
+              name="email"
+              placeholder="correo@ejemplo.com"
+              required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
             />
           </label>
           <label class="block">
-            <span class="mb-1">Mensaje</span>
+            <span class="text-sm font-semibold text-gray-700">Mensaje</span>
             <textarea
               rows="3"
-              class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-pink-500 dark:bg-gray-100"
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
+              placeholder="Escribe tu mensaje aquí..."
             ></textarea>
           </label>
           <button
-            type="button"
-            class="self-center px-8 py-3 text-lg rounded-lg bg-pink-500 text-white hover:bg-pink-600 focus:ring-2 focus:ring-pink-500 focus:ring-opacity-75 transition-transform transform active:scale-95"
+            type="submit"
+            class="w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-md hover:from-pink-600 hover:to-purple-600 transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2"
           >
             Enviar
           </button>
@@ -699,7 +696,7 @@
       </div>
     </footer>
     <!-- Botón para subir -->
-
     <script src="./js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
   </body>
 </html>

@@ -11,37 +11,28 @@ menuButton.addEventListener("click", () => {
   menuButton.setAttribute("aria-expanded", menu.classList.contains("hidden") ? "false" : "true");
 });
 
-prevBtn.addEventListener("click", () => {
-  currentIndex = currentIndex > 0 ? currentIndex - 1 : 0;
-  updateCarousel();
-  resetAutoSlide();
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.splide', {
+    type: 'loop', 
+    perPage: 1,
+    perMove: 1,
+    gap: '16px',
+    breakpoints: {
+      640: {
+        perPage: 1,
+      },
+      768: {
+        perPage: 2,
+      },
+      1024: {
+        perPage: 3,
+      },
+    },
+    pagination: true,
+    arrows: true,
+    drag: true,
+    autoplay: true,
+    interval: 3000,
+  }).mount();
 });
 
-nextBtn.addEventListener("click", () => {
-  const totalSlides = carousel.children.length;
-  currentIndex = currentIndex < totalSlides - 1 ? currentIndex + 1 : totalSlides - 1;
-  updateCarousel();
-  resetAutoSlide();
-});
-
-function updateCarousel() {
-  const slideWidth = carousel.children[0].clientWidth;
-  const offset = currentIndex * -slideWidth;
-  carousel.style.transform = `translateX(${offset}px)`;
-}
-
-function startAutoSlide() {
-  autoSlideInterval = setInterval(() => {
-    const totalSlides = carousel.children.length;
-    currentIndex = (currentIndex + 1) % totalSlides;
-    updateCarousel();
-  }, 3000); 
-}
-
-function resetAutoSlide() {
-  clearInterval(autoSlideInterval);
-  startAutoSlide();
-}
-
-
-startAutoSlide();
