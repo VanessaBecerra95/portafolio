@@ -77,14 +77,14 @@ nav ul li:hover a::after {
 }
 
 .splide__arrow {
-  background-color: #ec4899; /* Rosa de Tailwind */
+  background-color: deeppink;
   color: white;
   border-radius: 9999px;
   padding: 0.5rem;
 }
 
 .splide__pagination__page {
-  background-color: #ec4899;
+  background-color: deeppink;
   width: 10px;
   height: 10px;
   border-radius: 50%;

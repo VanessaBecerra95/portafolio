@@ -8,8 +8,11 @@
       content="Author: Vanessa Becerra, Category: Portafolio"
     />
     <title>Mi portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-pattern-circle bg-gray-100">
@@ -532,7 +535,7 @@
           </p>
         </div>
         <form
-          action="contact.php"
+          action="./php/contact.php"
           class="bg-white p-8 rounded-lg shadow-lg space-y-6"
         >
           <label class="block">
@@ -541,7 +544,7 @@
             >
             <input
               type="text"
-              name="nombre"
+              name="name"
               placeholder="Ingrese su nombre completo"
               required
               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
@@ -562,6 +565,7 @@
           <label class="block">
             <span class="text-sm font-semibold text-gray-700">Mensaje</span>
             <textarea
+              name="message"
               rows="3"
               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
               placeholder="Escribe tu mensaje aquí..."
@@ -697,6 +701,9 @@
     </footer>
     <!-- Botón para subir -->
     <script src="./js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      defer
+    ></script>
   </body>
 </html>
